@@ -1,9 +1,9 @@
-Writing command line to /tmp/Z1mw8wjsxG.dsk...
+Writing command line to /tmp/3PNbrYfrC7.dsk...
 warning: can't find squish-pty, so terminal input will fail
 bochs -q
 Kernel command line: -q -mlfqs run mlfqs-fair-2
 Pintos booting with 4,096 kB RAM...
-375 pages available in kernel pool.
+374 pages available in kernel pool.
 374 pages available in user pool.
 Calibrating timer...  204,600 loops/s.
 Boot complete.
@@ -13,20 +13,20 @@ Executing 'mlfqs-fair-2':
 intr_get_level ()==INTR_ON identify: 
  end of indent 
 523 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
+:intr_get_level ()==INTR_ON identify: (mlfqs-fair-2) 
  end of indent 
-523 left_ticks: 
-:(mlfqs-fair-2) Starting threads took 12 ticks.
+Starting threads took 9 ticks.523 left_ticks: 
+:
 (mlfqs-fair-2) Sleeping 40 seconds to let threads run, please wait...
 intr_get_level ()==INTR_ON identify: 
  end of indent 
-4049 left_ticks: 
+4032 left_ticks: 
 :I'm hereI'm hereI'm here(mlfqs-fair-2) Thread 0 received 1501 ticks.
-(mlfqs-fair-2) Thread 1 received 1501 ticks.
+(mlfqs-fair-2) Thread 1 received 1500 ticks.
 (mlfqs-fair-2) end
 Execution of 'mlfqs-fair-2' complete.
-Timer: 4070 ticks
-Thread: 999 idle ticks, 3074 kernel ticks, 0 user ticks
-Console: 871 characters output
+Timer: 4032 ticks
+Thread: 999 idle ticks, 3033 kernel ticks, 0 user ticks
+Console: 870 characters output
 Keyboard: 0 keys pressed
 Powering off...

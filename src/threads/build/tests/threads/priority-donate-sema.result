@@ -17,7 +17,12 @@ Differences in `diff -u' format:
 - (priority-donate-sema) Thread L downed semaphore.
 - (priority-donate-sema) Thread H acquired lock.
 - (priority-donate-sema) Thread H finished.
-- (priority-donate-sema) Thread M finished.
++ (priority-donate-sema) THIS PRI 32. ACTUAL: 31.
++ (priority-donate-sema) THIS PRI 34. ACTUAL: 31.
++ (priority-donate-sema) I am Thread H
++ (priority-donate-sema) THIS PRI 36. ACTUAL: 31.
+  (priority-donate-sema) Thread M finished.
 - (priority-donate-sema) Thread L finished.
++ (priority-donate-sema) MAIN TH PRIACTUAL: 31.
   (priority-donate-sema) Main thread finished.
   (priority-donate-sema) end

@@ -40,9 +40,13 @@ test_priority_donate_sema (void)
   lock_init (&ls.lock);
   sema_init (&ls.sema, 0);
   thread_create ("low", PRI_DEFAULT + 1, l_thread_func, &ls);
+  msg ("THIS PRI %d. ACTUAL: %d.", PRI_DEFAULT +1, thread_get_priority());
   thread_create ("med", PRI_DEFAULT + 3, m_thread_func, &ls);
+  msg ("THIS PRI %d. ACTUAL: %d.", PRI_DEFAULT +3, thread_get_priority());
   thread_create ("high", PRI_DEFAULT + 5, h_thread_func, &ls);
+  msg ("THIS PRI %d. ACTUAL: %d.", PRI_DEFAULT +5, thread_get_priority());
   sema_up (&ls.sema);
+  msg ("MAIN TH PRIACTUAL: %d.", thread_get_priority());
   msg ("Main thread finished.");
 }
 
@@ -72,7 +76,7 @@ static void
 h_thread_func (void *ls_) 
 {
   struct lock_and_sema *ls = ls_;
-
+  msg ("I am Thread H");
   lock_acquire (&ls->lock);
   msg ("Thread H acquired lock.");
 

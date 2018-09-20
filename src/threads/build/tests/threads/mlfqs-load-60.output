@@ -1,9 +1,9 @@
-Writing command line to /tmp/DxcjqfGcVL.dsk...
+Writing command line to /tmp/k0Spcc6tIL.dsk...
 warning: can't find squish-pty, so terminal input will fail
 bochs -q
 Kernel command line: -q -mlfqs run mlfqs-load-60
 Pintos booting with 4,096 kB RAM...
-375 pages available in kernel pool.
+374 pages available in kernel pool.
 374 pages available in user pool.
 Calibrating timer...  204,600 loops/s.
 Boot complete.
@@ -11,6 +11,12 @@ Executing 'mlfqs-load-60':
 (mlfqs-load-60) begin
 (mlfqs-load-60) Starting 60 niced load threads...
 intr_get_level ()==INTR_ON identify: 
+ end of indent 
+1023 left_ticks: 
+:intr_get_level ()==INTR_ON identify: 
+ end of indent 
+1023 left_ticks: 
+:intr_get_level ()==INTR_ON identify: 
  end of indent 
 1023 left_ticks: 
 :intr_get_level ()==INTR_ON identify: 
@@ -181,16 +187,10 @@ intr_get_level ()==INTR_ON identify:
 :intr_get_level ()==INTR_ON identify: 
  end of indent 
 1023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
+:intr_get_level ()==INTR_ON identify: (mlfqs-load-60) 
  end of indent 
-1023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-1023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-1023 left_ticks: 
-:(mlfqs-load-60) Starting threads took 2 seconds.
+Starting threads took 0 seconds.1023 left_ticks: 
+:
 intr_get_level ()==INTR_ON identify: 
  end of indent 
 1023 left_ticks: 
@@ -207,9 +207,189 @@ intr_get_level ()==INTR_ON identify:
  end of indent 
 1623 left_ticks: 
 :I'm here(mlfqs-load-60) After 6 seconds, load average=0.00.
-intr_get_level ()==INTR_ON identify: 
+intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: 
  end of indent 
-1823 left_ticks: 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:1823 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
+:13023 left_ticks: 
 :I'm here(mlfqs-load-60) After 8 seconds, load average=0.00.
 intr_get_level ()==INTR_ON identify: 
  end of indent 
@@ -226,190 +406,10 @@ intr_get_level ()==INTR_ON identify:
 intr_get_level ()==INTR_ON identify: 
  end of indent 
 2623 left_ticks: 
-:I'm hereintr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:(mlfqs-load-60) After 16 seconds, load average=0.00.
+:I'm here(mlfqs-load-60) After 16 seconds, load average=0.00.
 intr_get_level ()==INTR_ON identify: 
  end of indent 
 2823 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-13023 left_ticks: 
 :I'm here(mlfqs-load-60) After 18 seconds, load average=0.00.
 intr_get_level ()==INTR_ON identify: 
  end of indent 
@@ -733,8 +733,8 @@ intr_get_level ()==INTR_ON identify:
 :I'm here(mlfqs-load-60) After 178 seconds, load average=0.00.
 (mlfqs-load-60) end
 Execution of 'mlfqs-load-60' complete.
-Timer: 18839 ticks
-Thread: 11852 idle ticks, 6990 kernel ticks, 0 user ticks
+Timer: 18823 ticks
+Thread: 12569 idle ticks, 6254 kernel ticks, 0 user ticks
 Console: 22413 characters output
 Keyboard: 0 keys pressed
 Powering off...

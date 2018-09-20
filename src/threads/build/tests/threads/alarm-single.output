@@ -1,9 +1,9 @@
-Writing command line to /tmp/QRssBaNRUJ.dsk...
+Writing command line to /tmp/e54318yRPM.dsk...
 warning: can't find squish-pty, so terminal input will fail
 bochs -q
 Kernel command line: -q run alarm-single
 Pintos booting with 4,096 kB RAM...
-375 pages available in kernel pool.
+374 pages available in kernel pool.
 374 pages available in user pool.
 Calibrating timer...  204,600 loops/s.
 Boot complete.
@@ -16,22 +16,22 @@ Executing 'alarm-single':
 (alarm-single) sleep duration will appear in nondescending order.
 intr_get_level ()==INTR_ON identify: 
  end of indent 
-171 left_ticks: 
+172 left_ticks: 
 :intr_get_level ()==INTR_ON identify: 
  end of indent 
-181 left_ticks: 
+182 left_ticks: 
 :intr_get_level ()==INTR_ON identify: 
  end of indent 
-191 left_ticks: 
+192 left_ticks: 
 :intr_get_level ()==INTR_ON identify: 
  end of indent 
-201 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
+202 left_ticks: 
+:intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: 
  end of indent 
-211 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
+
  end of indent 
-328 left_ticks: 
+212 left_ticks: 
+:319 left_ticks: 
 :I'm hereI'm hereI'm hereI'm hereI'm hereI'm here(alarm-single) thread 0: duration=10, iteration=1, product=10
 (alarm-single) thread 1: duration=20, iteration=1, product=20
 (alarm-single) thread 2: duration=30, iteration=1, product=30
@@ -39,8 +39,8 @@ intr_get_level ()==INTR_ON identify:
 (alarm-single) thread 4: duration=50, iteration=1, product=50
 (alarm-single) end
 Execution of 'alarm-single' complete.
-Timer: 382 ticks
-Thread: 250 idle ticks, 135 kernel ticks, 0 user ticks
-Console: 1464 characters output
+Timer: 319 ticks
+Thread: 250 idle ticks, 69 kernel ticks, 0 user ticks
+Console: 1463 characters output
 Keyboard: 0 keys pressed
 Powering off...

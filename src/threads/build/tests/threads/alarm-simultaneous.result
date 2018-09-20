@@ -44,60 +44,60 @@ Differences in `diff -u' format:
 + intr_get_level ()==INTR_ON identify: 
 +  end of indent 
 + 55 left_ticks: 
++ :I'm hereintr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: 
++  end of indent 
++ 
++  end of indent 
++ 57 left_ticks: 
++ :162 left_ticks: 
++ :I'm hereintr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: 
++  end of indent 
++ 
++  end of indent 
++ 
++  end of indent 
++ 60 left_ticks: 
++ :309 left_ticks: 
++ :162 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 161 left_ticks: 
-+ :intr_get_level ()==INTR_ON identify: 
-+  end of indent 
-+ 61 left_ticks: 
++ 162 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 161 left_ticks: 
-+ :intr_get_level ()==INTR_ON identify: 
-+  end of indent 
-+ 66 left_ticks: 
++ 172 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 316 left_ticks: 
-+ :intr_get_level ()==INTR_ON identify: 
-+  end of indent 
-+ 161 left_ticks: 
++ 172 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 171 left_ticks: 
++ 173 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 171 left_ticks: 
++ 182 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 171 left_ticks: 
++ 182 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 181 left_ticks: 
++ 183 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 181 left_ticks: 
++ 192 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 181 left_ticks: 
++ 192 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 191 left_ticks: 
++ 193 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 191 left_ticks: 
++ 202 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 191 left_ticks: 
++ 202 left_ticks: 
 + :I'm hereintr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 201 left_ticks: 
-+ :I'm hereintr_get_level ()==INTR_ON identify: 
-+  end of indent 
-+ 201 left_ticks: 
-+ :I'm hereintr_get_level ()==INTR_ON identify: 
-+  end of indent 
-+ 201 left_ticks: 
++ 203 left_ticks: 
 + :I'm hereI'm hereI'm hereI'm here(alarm-simultaneous) iteration 0, thread 0: woke up after 10 ticks
 + (alarm-simultaneous) iteration 0, thread 1: woke up 1 ticks later
 + (alarm-simultaneous) iteration 0, thread 2: woke up 1 ticks later

@@ -10,6 +10,6 @@ Differences in `diff -u' format:
 - (alarm-zero) PASS
 + intr_get_level ()==INTR_ON identify: 
 +  end of indent 
-+ 22 left_ticks: 
++ 23 left_ticks: 
 + :I'm here(alarm-zero) PASS
   (alarm-zero) end

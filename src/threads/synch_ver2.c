@@ -41,11 +41,13 @@
 
    - up or "V": increment the value (and wake up one waiting
      thread, if any). */
+
+//static struct list donation_list;
+
 void
 sema_init (struct semaphore *sema, unsigned value) 
 {
   ASSERT (sema != NULL);
-
   sema->value = value;
   list_init (&sema->waiters);
 }
@@ -65,7 +67,7 @@ sema_down (struct semaphore *sema)
 
   ASSERT (sema != NULL);
   ASSERT (!intr_context ());
-
+  //printf("sema_down_attempt\n");
   old_level = intr_disable ();
   while (sema->value == 0) 
     {
@@ -73,6 +75,8 @@ sema_down (struct semaphore *sema)
       				   high_pri_func, NULL);
       //list_push_back (&sema->waiters, &thread_current ()->elem);
       thread_block ();
+//      printf("blocked\n");
+//      printf("semaval: %d\n", sema->value);
     }
   sema->value--;
   intr_set_level (old_level);
@@ -125,6 +129,7 @@ sema_up (struct semaphore *sema)
                                 struct thread, elem));
   }
   sema->value++;
+  ASSERT (!intr_context());
   time_to_yield();
   intr_set_level (old_level);
 }
@@ -184,8 +189,10 @@ sema_test_helper (void *sema_)
 void
 lock_init (struct lock *lock)
 {
+  //list_init(&donation_list);
   ASSERT (lock != NULL);
 
+  ;
   lock->holder = NULL;
   sema_init (&lock->semaphore, 1);
 }
@@ -199,21 +206,47 @@ lock_init (struct lock *lock)
    interrupts disabled, but interrupts will be turned back on if
    we need to sleep. */
 void donate_one (struct lock *lock){
-  if(thread_mlfqs)
-    return; 
-  if(lock->holder != NULL){
+   if(lock->holder != NULL){
     struct thread *donee = lock->holder;
     if (donee->priority < thread_current () ->priority)
     {
-      //donee->priority_ori = donee->priority;
+      donee->priority_ori = donee->priority;
       donee->priority = thread_current()->priority;
 //      printf("help\n");
     }
   }
 } 
-void donate_two (struct lock *lock){
 
+void donate_mul (struct lock *lock){
+  ASSERT(lock != NULL);
+  ASSERT(list_empty (&donation_list));
+  struct thread *seeker = thread_current();
+  if(lock->holder == NULL)
+    return;
+ 
+  struct thread *holder = lock->holder;
 
+  if(seeker -> priority > holder -> priority){
+    holder->priority = seeker->priority;
+    list_push_back (&donation_list, &holder->elem);
+    if(holder -> wait_lock != NULL){
+    
+    donate_mul(holder->wait_lock);
+    }
+  }
+}  
+void undonate_mul (){
+  struct list_elem *e;
+  /*if(list_empty (&donation_list))
+    return;
+  for ( e = list_begin (&donation_list); e != list_end (&donation_list);
+	e = list_next(e)){
+    struct thread *t = list_entry (e, struct thread, elem);
+    t->priority = t->priority_ori;
+
+  }*/
+}
+void undonate_one (struct lock *lock){
 }
 void
 lock_acquire (struct lock *lock)
@@ -221,9 +254,12 @@ lock_acquire (struct lock *lock)
   ASSERT (lock != NULL);
   ASSERT (!intr_context ());
   ASSERT (!lock_held_by_current_thread (lock));
-  donate_one(lock);
+  
+  donate_mul(lock);
+  
   sema_down (&lock->semaphore);
   lock->holder = thread_current ();
+
 }
 
 /* Tries to acquires LOCK and returns true if successful or false
@@ -257,12 +293,15 @@ lock_release (struct lock *lock)
 {
   ASSERT (lock != NULL);
   ASSERT (lock_held_by_current_thread (lock));
-  
-  if (!thread_mlfqs && thread_current () -> priority_ori != NULL){
+
+
+/*
+  if (thread_current () -> priority_ori != NULL){
     if (thread_current () -> priority_ori != thread_current () -> priority)
       thread_current ()->priority = thread_current () ->priority_ori;
-  }
+  }*/
   lock->holder = NULL;
+  undonate_mul();
   sema_up (&lock->semaphore);
 }
 
@@ -276,7 +315,6 @@ lock_held_by_current_thread (const struct lock *lock)
 
   return lock->holder == thread_current ();
 }
-
 /* One semaphore in a list. */
 struct semaphore_elem 
   {

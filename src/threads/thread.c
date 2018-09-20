@@ -119,6 +119,7 @@ thread_init (void)
   lock_init (&tid_lock);
   list_init (&ready_list);
   //list_init (&block_list);
+  list_init (&donation_list);
   /* Set up a thread structure for the running thread. */
   initial_thread = running_thread ();
   init_thread (initial_thread, "main", PRI_DEFAULT);
@@ -209,6 +210,8 @@ thread_create (const char *name, int priority,
   init_thread (t, name, priority);
   tid = t->tid = allocate_tid ();
 
+  t->priority_ori = priority;
+
   /* Stack frame for kernel_thread(). */
   kf = alloc_frame (t, sizeof *kf);
   kf->eip = NULL;
@@ -275,6 +278,11 @@ thread_unblock (struct thread *t)
   list_insert_ordered (&ready_list, &t->elem, high_pri_func, NULL);
   //list_push_back (&ready_list, &t->elem);
   t->status = THREAD_READY;
+//  time_to_yield();
+
+  if (thread_current() !=idle_thread && thread_current()->priority < t->priority)
+   // thread_yield();
+
   intr_set_level (old_level);
 
   
@@ -356,7 +364,7 @@ void
 thread_set_priority (int new_priority) 
 {
   thread_current ()->priority = new_priority;
-
+  thread_current ()->priority_ori = new_priority;
   list_sort (&ready_list, high_pri_func, NULL);
   if(!list_empty (&ready_list) && new_priority < list_entry (list_front (&ready_list), struct thread, elem))
     thread_yield();
@@ -485,6 +493,7 @@ init_thread (struct thread *t, const char *name, int priority)
   strlcpy (t->name, name, sizeof t->name);
   t->stack = (uint8_t *) t + PGSIZE;
   t->priority = priority;
+  t->priority_ori = priority;
   t->magic = THREAD_MAGIC;
 }
 

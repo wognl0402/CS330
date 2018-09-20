@@ -1,9 +1,9 @@
-Writing command line to /tmp/oVt88tMeZt.dsk...
+Writing command line to /tmp/GdcG_7zae8.dsk...
 warning: can't find squish-pty, so terminal input will fail
 bochs -q
 Kernel command line: -q run alarm-simultaneous
 Pintos booting with 4,096 kB RAM...
-375 pages available in kernel pool.
+374 pages available in kernel pool.
 374 pages available in user pool.
 Calibrating timer...  204,600 loops/s.
 Boot complete.
@@ -15,60 +15,60 @@ Executing 'alarm-simultaneous':
 intr_get_level ()==INTR_ON identify: 
  end of indent 
 55 left_ticks: 
+:I'm hereintr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: 
+ end of indent 
+
+ end of indent 
+57 left_ticks: 
+:162 left_ticks: 
+:I'm hereintr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: intr_get_level ()==INTR_ON identify: 
+ end of indent 
+
+ end of indent 
+
+ end of indent 
+60 left_ticks: 
+:309 left_ticks: 
+:162 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-161 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-61 left_ticks: 
+162 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-161 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-66 left_ticks: 
+172 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-316 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
- end of indent 
-161 left_ticks: 
+172 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-171 left_ticks: 
+173 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-171 left_ticks: 
+182 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-171 left_ticks: 
+182 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-181 left_ticks: 
+183 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-181 left_ticks: 
+192 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-181 left_ticks: 
+192 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-191 left_ticks: 
+193 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-191 left_ticks: 
+202 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-191 left_ticks: 
+202 left_ticks: 
 :I'm hereintr_get_level ()==INTR_ON identify: 
  end of indent 
-201 left_ticks: 
-:I'm hereintr_get_level ()==INTR_ON identify: 
- end of indent 
-201 left_ticks: 
-:I'm hereintr_get_level ()==INTR_ON identify: 
- end of indent 
-201 left_ticks: 
+203 left_ticks: 
 :I'm hereI'm hereI'm hereI'm here(alarm-simultaneous) iteration 0, thread 0: woke up after 10 ticks
 (alarm-simultaneous) iteration 0, thread 1: woke up 1 ticks later
 (alarm-simultaneous) iteration 0, thread 2: woke up 1 ticks later
@@ -86,8 +86,8 @@ intr_get_level ()==INTR_ON identify:
 (alarm-simultaneous) iteration 4, thread 2: woke up 0 ticks later
 (alarm-simultaneous) end
 Execution of 'alarm-simultaneous' complete.
-Timer: 453 ticks
-Thread: 248 idle ticks, 208 kernel ticks, 0 user ticks
-Console: 3125 characters output
+Timer: 309 ticks
+Thread: 244 idle ticks, 65 kernel ticks, 0 user ticks
+Console: 3124 characters output
 Keyboard: 0 keys pressed
 Powering off...

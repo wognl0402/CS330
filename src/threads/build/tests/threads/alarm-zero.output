@@ -1,9 +1,9 @@
-Writing command line to /tmp/7JwAdBorHR.dsk...
+Writing command line to /tmp/oOOMisad_H.dsk...
 warning: can't find squish-pty, so terminal input will fail
 bochs -q
 Kernel command line: -q run alarm-zero
 Pintos booting with 4,096 kB RAM...
-375 pages available in kernel pool.
+374 pages available in kernel pool.
 374 pages available in user pool.
 Calibrating timer...  204,600 loops/s.
 Boot complete.
@@ -11,12 +11,12 @@ Executing 'alarm-zero':
 (alarm-zero) begin
 intr_get_level ()==INTR_ON identify: 
  end of indent 
-22 left_ticks: 
+23 left_ticks: 
 :I'm here(alarm-zero) PASS
 (alarm-zero) end
 Execution of 'alarm-zero' complete.
 Timer: 35 ticks
-Thread: 2 idle ticks, 36 kernel ticks, 0 user ticks
+Thread: 1 idle ticks, 37 kernel ticks, 0 user ticks
 Console: 460 characters output
 Keyboard: 0 keys pressed
 Powering off...

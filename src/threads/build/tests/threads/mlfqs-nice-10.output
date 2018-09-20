@@ -1,9 +1,9 @@
-Writing command line to /tmp/ztYlqgenS2.dsk...
+Writing command line to /tmp/iXftnfbPvu.dsk...
 warning: can't find squish-pty, so terminal input will fail
 bochs -q
 Kernel command line: -q -mlfqs run mlfqs-nice-10
 Pintos booting with 4,096 kB RAM...
-375 pages available in kernel pool.
+374 pages available in kernel pool.
 374 pages available in user pool.
 Calibrating timer...  204,600 loops/s.
 Boot complete.
@@ -36,29 +36,29 @@ intr_get_level ()==INTR_ON identify:
 523 left_ticks: 
 :intr_get_level ()==INTR_ON identify: 
  end of indent 
-523 left_ticks: 
-:intr_get_level ()==INTR_ON identify: 
+524 left_ticks: 
+:intr_get_level ()==INTR_ON identify: (mlfqs-nice-10) 
  end of indent 
-523 left_ticks: 
-:(mlfqs-nice-10) Starting threads took 42 ticks.
+Starting threads took 19 ticks.523 left_ticks: 
+:
 (mlfqs-nice-10) Sleeping 40 seconds to let threads run, please wait...
 intr_get_level ()==INTR_ON identify: 
  end of indent 
-4081 left_ticks: 
+4042 left_ticks: 
 :I'm hereI'm hereI'm hereI'm hereI'm hereI'm hereI'm hereI'm hereI'm hereI'm hereI'm here(mlfqs-nice-10) Thread 0 received 304 ticks.
 (mlfqs-nice-10) Thread 1 received 300 ticks.
 (mlfqs-nice-10) Thread 2 received 299 ticks.
-(mlfqs-nice-10) Thread 3 received 301 ticks.
+(mlfqs-nice-10) Thread 3 received 300 ticks.
 (mlfqs-nice-10) Thread 4 received 301 ticks.
 (mlfqs-nice-10) Thread 5 received 301 ticks.
-(mlfqs-nice-10) Thread 6 received 300 ticks.
+(mlfqs-nice-10) Thread 6 received 301 ticks.
 (mlfqs-nice-10) Thread 7 received 301 ticks.
-(mlfqs-nice-10) Thread 8 received 300 ticks.
-(mlfqs-nice-10) Thread 9 received 297 ticks.
+(mlfqs-nice-10) Thread 8 received 297 ticks.
+(mlfqs-nice-10) Thread 9 received 301 ticks.
 (mlfqs-nice-10) end
 Execution of 'mlfqs-nice-10' complete.
-Timer: 4150 ticks
-Thread: 991 idle ticks, 3162 kernel ticks, 0 user ticks
+Timer: 4042 ticks
+Thread: 991 idle ticks, 3051 kernel ticks, 0 user ticks
 Console: 1880 characters output
 Keyboard: 0 keys pressed
 Powering off...

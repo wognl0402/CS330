@@ -1,34 +1,42 @@
-Writing command line to /tmp/JAhxK7y6rj.dsk...
+Writing command line to /tmp/ZC8rLL10O0.dsk...
 warning: can't find squish-pty, so terminal input will fail
 bochs -q
 Kernel command line: -q run priority-donate-chain
 Pintos booting with 4,096 kB RAM...
-375 pages available in kernel pool.
+374 pages available in kernel pool.
 374 pages available in user pool.
 Calibrating timer...  204,600 loops/s.
 Boot complete.
 Executing 'priority-donate-chain':
 (priority-donate-chain) begin
 (priority-donate-chain) main got lock.
-(priority-donate-chain) main should have priority 3.  Actual priority: 0.
-(priority-donate-chain) interloper 1 finished.
-(priority-donate-chain) main should have priority 6.  Actual priority: 0.
+(priority-donate-chain) main should have priority 3.  Actual priority: 3.
+(priority-donate-chain) main should have priority 6.  Actual priority: 3.
 (priority-donate-chain) interloper 2 finished.
-(priority-donate-chain) main should have priority 9.  Actual priority: 0.
+(priority-donate-chain) main should have priority 9.  Actual priority: 3.
 (priority-donate-chain) interloper 3 finished.
-(priority-donate-chain) main should have priority 12.  Actual priority: 0.
+(priority-donate-chain) main should have priority 12.  Actual priority: 3.
 (priority-donate-chain) interloper 4 finished.
-(priority-donate-chain) main should have priority 15.  Actual priority: 0.
+(priority-donate-chain) main should have priority 15.  Actual priority: 3.
 (priority-donate-chain) interloper 5 finished.
-(priority-donate-chain) main should have priority 18.  Actual priority: 0.
+(priority-donate-chain) main should have priority 18.  Actual priority: 3.
 (priority-donate-chain) interloper 6 finished.
-(priority-donate-chain) main should have priority 21.  Actual priority: 0.
+(priority-donate-chain) main should have priority 21.  Actual priority: 3.
 (priority-donate-chain) interloper 7 finished.
-(priority-donate-chain) main finishing with priority 0.
-(priority-donate-chain) end
+(priority-donate-chain) (priority-donate-chain) thread 1 got lockmain finishing with priority 3.
+
+(priority-donate-chain) (priority-donate-chain) endthread 1 should have priority 21. Actual priority: 3
+
 Execution of 'priority-donate-chain' complete.
-Timer: 199 ticks
-Thread: 0 idle ticks, 202 kernel ticks, 0 user ticks
-Console: 1366 characters output
+Kernel PANIC at ../../threads/synch.c:259 in lock_release(): assertion `lock_held_by_current_thread (lock)' failed.
+Call stack: 0xc0116f80Interrupt 0x0e (#PF Page-Fault Exception) at eip=0xc01054d2
+ cr2=00000103 error=00000000
+ eax=00000103 ebx=00000103 ecx=c0116eac edx=000003d4
+ esi=c010bd14 edi=c010d042 esp=c010d6e7 ebp=c0116f40
+ cs=0008 ds=0010 es=0010 ss=6f80
+Kernel PANIC recursion at ../../threads/interrupt.c:373 in intr_handler().
+Timer: 121 ticks
+Thread: 0 idle ticks, 121 kernel ticks, 0 user ticks
+Console: 1879 characters output
 Keyboard: 0 keys pressed
 Powering off...
